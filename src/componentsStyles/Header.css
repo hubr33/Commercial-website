@@ -1,0 +1,51 @@
+header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  font-family: "Lato", sans-serif;
+}
+
+header .firmName {
+  width: 30%;
+  height: 100%;
+}
+
+header .info {
+  width: 70%;
+  height: 100%;
+}
+
+header .info .hours {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 1px 1px 3px black;
+  border-end-start-radius: 50px;
+  border-end-end-radius: 50px;
+}
+
+header .info .navButtons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+
+header .info .navButtons .navBtn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 6px 18px;
+}
+
+header .info .navButtons .navBtn:hover {
+  font-weight: bold;
+  color: rgb(0, 196, 0);
+}
