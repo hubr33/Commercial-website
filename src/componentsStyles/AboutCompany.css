@@ -42,19 +42,21 @@ main .square .checkInfoBtn {
   top: 70%;
   transform: translateX(-50%);
   overflow: hidden;
+  z-index: 1;
 }
 
 main .square .checkInfoBtn p {
   transform: skew(-20deg);
+  color: white;
+  transition: 0.2 linear;
 }
 
-main .square .checkInfoBtn p:hover {
+main .square .checkInfoBtn:hover p {
   color: green;
 }
 
 main .square .checkInfoBtn:hover {
   cursor: pointer;
-  color: green;
 }
 
 .checkInfoBtn:after {
@@ -66,7 +68,7 @@ main .square .checkInfoBtn:hover {
   height: 100px;
   transform: translateY(-50%);
   background: white;
-  transition: left 0.4s ease;
+  transition: left 0.3s ease;
   z-index: -1;
 }
 
@@ -76,6 +78,6 @@ main .square .checkInfoBtn:hover {
 
 .aboutCompany {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: white;
 }

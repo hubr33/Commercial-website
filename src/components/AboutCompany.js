@@ -15,7 +15,7 @@ export const AboutCompany = () => {
           </button>
         </div>
       </main>
-      <div className="aboutCompany">Hej</div>
+      <div className="aboutCompany"></div>
     </>
   );
 };
