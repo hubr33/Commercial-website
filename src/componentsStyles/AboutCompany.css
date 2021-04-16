@@ -5,7 +5,7 @@ section.companyWrapper {
   position: relative;
   width: 100%;
   height: calc(100vh - 100px);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 section.companyWrapper aside {
@@ -13,8 +13,8 @@ section.companyWrapper aside {
   width: 30%;
   height: 80%;
   border-radius: 20px;
-  box-shadow: 2px 2px 6px black;
-  background-color: rgba(0, 255, 0, 0.1);
+  box-shadow: 2px 2px 7px black;
+  background-color: white;
   color: rgb(73, 73, 202);
   font-family: "Noto Sans TC", sans-serif;
 }
@@ -53,7 +53,8 @@ section.companyWrapper div.location {
   height: 80%;
   border-radius: 20px;
   overflow: hidden;
-  background-color: rgba(0, 255, 0, 0.1);
+  background-color: white;
+  box-shadow: 2px 2px 7px black;
 }
 section.companyWrapper div.location h2 {
   text-align: center;
