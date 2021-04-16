@@ -22,6 +22,9 @@ export const Header = () => {
         </div>
         <div className="navButtons">
           <NavLink className="navBtn" to="/">
+            Start
+          </NavLink>
+          <NavLink className="navBtn" to="/company">
             O firmie
           </NavLink>
           <NavLink className="navBtn" to="/rent">
