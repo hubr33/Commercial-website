@@ -30,9 +30,6 @@ export const Header = () => {
           <NavLink className="navBtn" to="/rent">
             Wynajem
           </NavLink>
-          <NavLink className="navBtn" to="/equip">
-            Nasz sprzęt
-          </NavLink>
           <NavLink className="navBtn" to="/contact">
             Kontakt
           </NavLink>

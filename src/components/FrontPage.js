@@ -15,6 +15,17 @@ export class FrontPage extends Component {
     ],
   };
 
+  handleHideMessage = () => {
+    const message = document.querySelector(".sentMessage");
+    message.classList.remove("active");
+  };
+
+  handleShowMessage = () => {
+    const message = document.querySelector(".sentMessage");
+    message.classList.add("active");
+    setTimeout(this.handleHideMessage, 5000);
+  };
+
   handleError = (type) => {
     const phoneError = document.querySelector(".errorPhoneNumber");
     const emailError = document.querySelector(".errorEmail");
@@ -22,6 +33,7 @@ export class FrontPage extends Component {
     const emailID = document.getElementById("emailID");
     if (this.state.phoneNumber.length === 9) {
       phoneError.classList.remove("active");
+      this.handleShowMessage();
       this.setState(() =>
         this.state.phoneNumbersArray.push(this.state.phoneNumber)
       );
@@ -31,6 +43,7 @@ export class FrontPage extends Component {
     }
     if (this.state.email.length > 5) {
       emailError.classList.remove("active");
+      this.handleShowMessage();
       this.setState(() => this.state.emailsArray.push(this.state.email));
       emailID.value = "";
     } else if (type === "email") {
@@ -52,6 +65,13 @@ export class FrontPage extends Component {
     return (
       <>
         <main>
+          <div className="sentMessage">
+            <p>Wiadomość została pomyślnie wysłana!</p>
+            <p>
+              Skontaktujemy się z Państwem w jak{" "}
+              <strong>najszybszym czasie</strong>.
+            </p>
+          </div>
           <div className="square">
             <h2>
               Wynajem sprzetu budowlanego <br />

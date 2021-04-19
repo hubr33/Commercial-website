@@ -1,0 +1,127 @@
+section.renting {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+section.renting .buildChoose {
+  width: 50%;
+  background-image: url("./rentBuild.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130%;
+  filter: grayscale(0.5);
+  transition: 3s linear;
+}
+
+section.renting .buildChoose .buildChooseContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 3s linear;
+}
+
+section.renting .buildChoose:hover {
+  background-size: 140%;
+}
+
+section.renting .buildChoose:hover .buildChooseContainer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section.renting .buildChoose .buildChooseContainer h2 {
+  position: absolute;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-family: "Abril Fatface", cursive;
+  color: whitesmoke;
+}
+
+section.renting .buildChoose .buildChooseContainer .buildChooseBtn {
+  position: absolute;
+  width: 30%;
+  bottom: 20%;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid whitesmoke;
+  padding: 0 10px;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Abril Fatface", cursive;
+}
+
+section.renting .buildChoose .buildChooseContainer .buildChooseBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+section.renting .gardenChoose {
+  width: 50%;
+  background-image: url("./rentGarden.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130%;
+  filter: grayscale(0.5);
+  transition: 5s linear;
+}
+
+section.renting .gardenChoose .gardenChooseContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 3s linear;
+}
+
+section.renting .gardenChoose:hover {
+  background-size: 140%;
+}
+
+section.renting .gardenChoose:hover .gardenChooseContainer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section.renting .gardenChoose .gardenChooseContainer h2 {
+  position: absolute;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-family: "Abril Fatface", cursive;
+  color: whitesmoke;
+}
+
+section.renting .gardenChoose .gardenChooseContainer .gardenChooseBtn {
+  position: absolute;
+  width: 30%;
+  bottom: 20%;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid whitesmoke;
+  padding: 0 10px;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Abril Fatface", cursive;
+}
+
+section.renting .gardenChoose .gardenChooseContainer .gardenChooseBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

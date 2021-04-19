@@ -11,13 +11,13 @@ export const Footer = () => {
       <div className="footerLinks">
         <div className="navButtons">
           <NavLink className="navBtn" to="/">
+            Start
+          </NavLink>
+          <NavLink className="navBtn" to="/company">
             O firmie
           </NavLink>
           <NavLink className="navBtn" to="/rent">
             Wynajem
-          </NavLink>
-          <NavLink className="navBtn" to="/equip">
-            Nasz sprzęt
           </NavLink>
           <NavLink className="navBtn" to="/contact">
             Kontakt
