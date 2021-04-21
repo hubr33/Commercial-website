@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "../componentsStyles/FrontPage.css";
 
 export class FrontPage extends Component {
@@ -78,7 +79,9 @@ export class FrontPage extends Component {
               oraz ogrodniczego
             </h2>
             <button className="checkInfoBtn">
-              <p>Sprawdź nas!</p>
+              <NavLink className="checkUs" to="/company">
+                O firmie
+              </NavLink>
             </button>
           </div>
         </main>

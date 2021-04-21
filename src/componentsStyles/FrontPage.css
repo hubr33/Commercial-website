@@ -141,13 +141,14 @@ main .square .checkInfoBtn {
   z-index: 1;
 }
 
-main .square .checkInfoBtn p {
-  transform: skew(-20deg);
+main .square .checkInfoBtn .checkUs {
+  text-decoration: none;
+  text-transform: none;
   color: white;
   transition: 0.2 linear;
 }
 
-main .square .checkInfoBtn:hover p {
+main .square .checkInfoBtn:hover .checkUs {
   color: green;
 }
 

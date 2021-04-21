@@ -1,25 +1,18 @@
-section.buildingItems
-  .buildingItemsContainer
-  .buildItemContainer
-  .buildItemCreate
-  .buildRentArea
-  .buildRentButton {
-  background-color: transparent;
-  border: none;
-  width: 100%;
-  height: 100%;
-  font-size: 22px;
-  letter-spacing: 1px;
+.buildRentButton {
+  display: flex;
+  font-size: 16px;
+  padding: 0 20px;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: rgb(0, 160, 0);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s linear;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
 }
 
-section.buildingItems
-  .buildingItemsContainer
-  .buildItemContainer
-  .buildItemCreate
-  .buildRentArea
-  .buildRentButton:hover {
+.buildRentButton:hover {
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.18);
 }

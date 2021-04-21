@@ -18,7 +18,9 @@ export class Renting extends Component {
         <div className="gardenChoose">
           <div className="gardenChooseContainer">
             <h2>Sprzęt ogrodniczy</h2>
-            <button className="gardenChooseBtn">Wybierz</button>
+            <NavLink to="/rentGarden" className="gardenChooseBtn">
+              Wybierz
+            </NavLink>
           </div>
         </div>
       </section>

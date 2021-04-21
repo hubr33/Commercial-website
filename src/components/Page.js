@@ -4,6 +4,8 @@ import { FrontPage } from "./FrontPage";
 import { AboutCompany } from "./AboutCompany";
 import { Renting } from "./Renting";
 import { BuildingItems } from "./BuildingItems";
+import { GardenItems } from "./GardenItems";
+import { Contact } from "./Contact";
 
 const Page = () => {
   return (
@@ -12,6 +14,8 @@ const Page = () => {
       <Route path="/company" component={AboutCompany} />
       <Route path="/rent" component={Renting} />
       <Route path="/rentBuilding" component={BuildingItems} />
+      <Route path="/rentGarden" component={GardenItems} />
+      <Route path="/contact" component={Contact} />
     </>
   );
 };

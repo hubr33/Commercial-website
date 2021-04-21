@@ -1,40 +1,40 @@
 import React, { Component } from "react";
 import "../componentsStyles/ItemsAll.css";
-import einhellDrill from "../componentsStyles/einhellDrill.jpg";
-import saw from "../componentsStyles/saw.jpg";
-import hammer from "../componentsStyles/hammer.jpg";
+import scythe from "../componentsStyles/scythe.jpg";
+import mower from "../componentsStyles/mower.jpg";
+import scissors from "../componentsStyles/scissors.jpg";
 import { RentButton } from "./RentButton";
 
-export class BuildingItems extends Component {
+export class GardenItems extends Component {
   state = {
     time: new Date().toISOString().slice(0, 10),
     rentTimeFrom: "",
     rentTimeTo: "",
     selectedItem: "",
-    buildingItems: [
+    gardenItems: [
       {
         id: 0,
-        picture: einhellDrill,
-        brand: "Einhell",
-        item: "Wiertarka",
+        picture: scythe,
+        brand: "OLEO-MAC",
+        item: "Kosa spalinowa",
         about:
-          "Wiertaka marki Einhell zapewni stabilną oraz szybką pracę, bez problemów!",
+          "Kosa spalinowa marki OLEO-MAC zapewni szybką i efektowną pracę nad Twoim trawnikiem!",
       },
       {
         id: 1,
-        picture: saw,
-        brand: "GardeTech",
-        item: "Piła spalinowa",
+        picture: mower,
+        brand: "Stihl",
+        item: "Kosiarka spalinowa",
         about:
-          "Piła spalinowa marki GardeTech. Piła najwyższej jakości do trudnych zadań.",
+          "Kosiarka spalinowa Marki Stihl, dla której żaden trawnik to nie problem.",
       },
       {
         id: 2,
-        picture: hammer,
-        brand: "Makita",
-        item: "Młot udarowy",
+        picture: scissors,
+        brand: "Extech",
+        item: "Nożyce elektryczne",
         about:
-          "Młot udarowy marki Makita. Profesionalny sprzęt, który przebije najgrubszą warstwę.",
+          "Nożycze elektryczne marki Extech, dla których grube gałęzie (do 1.2cm) zostaną ścięte.",
       },
     ],
   };
@@ -46,7 +46,7 @@ export class BuildingItems extends Component {
     if (orderBtn) {
       const getID = e.target.parentElement.id;
       console.log(this.state.selectedItem);
-      this.setState({ selectedItem: this.state.buildingItems[getID].item });
+      this.setState({ selectedItem: this.state.gardenItems[getID].item });
     } else {
       return null;
     }
@@ -125,26 +125,26 @@ export class BuildingItems extends Component {
           </div>
         </div>
         <div className="buildingItemsContainer">
-          <h2>Nasz sprzęt budowlany</h2>
+          <h2>Nasz sprzęt ogrodniczy</h2>
           <div className="buildItemContainer">
-            {this.state.buildingItems.map((buildingItem) => (
+            {this.state.gardenItems.map((gardenItem) => (
               <div
-                key={buildingItem}
-                id={buildingItem.id}
+                key={gardenItem}
+                id={gardenItem.id}
                 className="buildItemCreate"
               >
-                <div key={buildingItem} className="buildImg">
-                  <img key={buildingItem} src={buildingItem.picture} alt="" />
+                <div className="buildImg">
+                  <img src={gardenItem.picture} alt="" />
                 </div>
-                <div key={buildingItem} className="buildText">
+                <div className="buildText">
                   <p>
-                    Marka <h4 key={buildingItem}>{buildingItem.brand}</h4>
+                    Marka <h4>{gardenItem.brand}</h4>
                   </p>
                   <p>
-                    Przedmiot <h4 key={buildingItem}>{buildingItem.item}</h4>
+                    Przedmiot <h4>{gardenItem.item}</h4>
                   </p>
                   <p>
-                    Opis <h4 key={buildingItem}>{buildingItem.about}</h4>
+                    Opis <h4>{gardenItem.about}</h4>
                   </p>
                 </div>
                 <RentButton click={this.handleOpenRent} />
