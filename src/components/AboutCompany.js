@@ -8,19 +8,17 @@ export const AboutCompany = () => {
         <h2>Czym się zajmujemy?</h2>
         <div className="informationAboutCompany">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
-            soluta natus eveniet iure aspernatur eligendi provident repellendus.
-            Explicabo consequuntur, cupiditate exercitationem quaerat
-            perspiciatis eum illum at rem numquam totam natus deserunt,
-            perferendis quia facilis ipsum, voluptate tempora sapiente
-            consectetur optio aspernatur pariatur. Iste amet similique odit
-            aspernatur minus provident non.
+            Jesteśmy mała firmą, która znajduje się w Potyrach nieopodal miasta
+            Płońsk. Mamy do zaoferowania profesjonalny sprzęt do prac
+            budowlanych oraz do prac w ogrodzie. Zachęcamy do sprawdzenia
+            naszego asortymentu oraz wypożyczenia naszego sprzętu w atrakcyjnych
+            cenach. <br /> Zapraszam ~ <strong>Krzysztof Piotrowski</strong>
           </p>
         </div>
       </aside>
       <div className="location">
         <h2>Gdzie się znajdujemy?</h2>
-        <div>Tutaj api z googla lokalizacji</div>
+        <div></div>
       </div>
     </section>
   );

@@ -10,9 +10,9 @@ export class FrontPage extends Component {
     phoneNumbersArray: [],
     emailsArray: [],
     newsArray: [
-      "Nowy młot udarowy już w naszym asortymencie! Zachecamy do wynajmu.",
-      "Nowa koparka pod wykop fundamentów już dostępna!",
-      "Zniżki dla stałych klientów! O procencie zniżki zapytaj naszego sprzedawcę.",
+      "Od miesiąca dostępna dla Was bardzo mocna glebogryzarka",
+      "Zapraszamy do wynajmu wertykulatora, zabieg wertykulacji poprawi kondycję Twojego trawnika",
+      "Kolejna Nowość do Waszej dyspozycji przecinarka spalinowa Husqvarna K770",
     ],
   };
 
@@ -80,7 +80,7 @@ export class FrontPage extends Component {
             </h2>
             <button className="checkInfoBtn">
               <NavLink className="checkUs" to="/company">
-                O firmie
+                <p>O Firmie</p>
               </NavLink>
             </button>
           </div>
@@ -89,40 +89,15 @@ export class FrontPage extends Component {
           <div className="contactUs">
             <div className="contactImg"></div>
             <div className="contactPanel">
+              <p>Nasz numer kontaktowy</p>
               <p>
-                Zostaw nam swój numer, <strong>oddzwonimy!</strong>
+                <i class="fas fa-mobile-alt"></i>883 003 799
               </p>
-              <input
-                id="phoneID"
-                type="number"
-                onChange={(e) => this.handleAddInfo("phone", e)}
-                placeholder="Wpisz swój numer telefonu"
-              />
-              <span className="errorPhoneNumber">
-                Wpisz poprawnie numer telefonu
-              </span>
-              <button
-                className="sendPhoneNumber"
-                onClick={() => this.handleError("phone")}
-              >
-                Wyślij
-              </button>
+
+              <p>Nasz adres e-mail</p>
               <p>
-                Zostaw nam swój e-mail, <strong>doradzimy!</strong>
+                <i class="far fa-envelope"></i>wypozyczalnia.plonsk@gmail.com
               </p>
-              <input
-                id="emailID"
-                type="text"
-                onChange={(e) => this.handleAddInfo("email", e)}
-                placeholder="Wpisz swój adres e-mail"
-              />
-              <span className="errorEmail">Wpisz poprawnie adres e-mail</span>
-              <button
-                className="sendEmail"
-                onClick={() => this.handleError("email")}
-              >
-                Wyślij
-              </button>
             </div>
             <div className="contactInfo">
               {this.state.messages.map((message) => (
@@ -139,14 +114,20 @@ export class FrontPage extends Component {
             <div className="buildingNote">
               <p>Wynajem sprzętu</p>
               <h2>Budowlanego</h2>
-              <button className="buildingBtn">Sprawdź</button>
+              {/* <button className="buildingBtn">Sprawdź</button> */}
+              <NavLink to="/rentBuilding" className="buildingBtn">
+                Sprawdź
+              </NavLink>
             </div>
           </div>
           <div className="gardening">
             <div className="gardeningNote">
               <p>Wynajem sprzetu</p>
               <h2>Ogrodniczego</h2>
-              <button className="gardeningBtn">Sprawdź</button>
+              {/* <button className="gardeningBtn">Sprawdź</button> */}
+              <NavLink to="/rentGarden" className="gardeningBtn">
+                Sprawdź
+              </NavLink>
             </div>
           </div>
           <div className="news">

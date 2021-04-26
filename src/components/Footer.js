@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="pageRights">
-        <p>Copyright by "Firma budowlana"</p>
+        <p>Copyright by "RENT-BUD-GARDEN" All rights reserved</p>
       </div>
       <div className="footerLinks">
         <div className="navButtons">

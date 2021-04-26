@@ -15,8 +15,8 @@ section.companyWrapper aside {
   border-radius: 20px;
   box-shadow: 2px 2px 7px black;
   background-color: white;
-  color: rgb(73, 73, 202);
-  font-family: "Noto Sans TC", sans-serif;
+  color: rgb(0, 0, 102);
+  font-family: "Lato", sans-serif;
 }
 
 section.companyWrapper aside h2 {
@@ -38,11 +38,15 @@ section.companyWrapper aside p {
   bottom: 10%;
   box-sizing: border-box;
   padding: 30px 40px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 28px;
   text-align: justify;
   text-justify: inter-word;
   background-color: transparent;
+}
+
+section.companyWrapper aside p strong {
+  right: 0;
 }
 
 section.companyWrapper div.location {
@@ -61,7 +65,7 @@ section.companyWrapper div.location h2 {
   text-transform: uppercase;
   font-size: 30px;
   width: 100%;
-  color: rgb(73, 73, 202);
+  color: rgb(0, 0, 102);
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -70,4 +74,8 @@ section.companyWrapper div.location div {
   height: 84%;
   margin: 0 auto;
   background-color: turquoise;
+  background-image: url("../componentsStyles/trasa.jpg");
+  background-position: center;
+  background-size: contain;
+  border-radius: 10px;
 }

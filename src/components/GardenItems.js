@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "../componentsStyles/ItemsAll.css";
-import scythe from "../componentsStyles/scythe.jpg";
-import mower from "../componentsStyles/mower.jpg";
-import scissors from "../componentsStyles/scissors.jpg";
-import { RentButton } from "./RentButton";
+import wertykulatorOskar from "../images/wertykulatorOscar.png";
+import wertykulatorOAlko from "../images/wertykulatorAlko.png";
+import scissors from "../images/scissors.jpg";
+import karcher from "../images/karcher.jpg";
+import glebogryzarka from "../images/glebogryzarka.jpg";
 
 export class GardenItems extends Component {
   state = {
@@ -14,27 +15,43 @@ export class GardenItems extends Component {
     gardenItems: [
       {
         id: 0,
-        picture: scythe,
-        brand: "OLEO-MAC",
-        item: "Kosa spalinowa",
+        picture: wertykulatorOskar,
+        brand: "Pubert Oscar 40H",
+        item: "Wertykulator spalinowy",
         about:
-          "Kosa spalinowa marki OLEO-MAC zapewni szybką i efektowną pracę nad Twoim trawnikiem!",
+          "Służy on do nacinania darni, dzięki czemu trawnik jest napowietrzony. Moc silnika: 5,5 KM, pojemność kosza: 50l, waga: 50 kg",
       },
       {
         id: 1,
-        picture: mower,
-        brand: "Stihl",
-        item: "Kosiarka spalinowa",
+        picture: wertykulatorOAlko,
+        brand: "Al-ko",
+        item: "Wertykulator spalinowy",
         about:
-          "Kosiarka spalinowa Marki Stihl, dla której żaden trawnik to nie problem.",
+          "Służy on do nacinania darni, dzięki czemu trawnik jest napowietrzony. Moc silnika: 3,6 KM, pojemność kosza: 40l, waga: 35 kg",
       },
       {
         id: 2,
         picture: scissors,
-        brand: "Extech",
-        item: "Nożyce elektryczne",
+        brand: "Stihl",
+        item: "Nożyce spalinowe HS 45, 60 cm",
         about:
-          "Nożycze elektryczne marki Extech, dla których grube gałęzie (do 1.2cm) zostaną ścięte.",
+          "Wyjątkowo lekkie nożyce spalinowe, przeznaczone do pielęgncji żywopłotów w przydomowych ogrodach.",
+      },
+      {
+        id: 3,
+        picture: karcher,
+        brand: "Kärcher",
+        item: "URZĄDZENIE WYSOKOCIŚNIENIOWE HD 5/15 C",
+        about:
+          "Wydajność tłoczenia: 500l/h, Ciśnienie robocze (bar/MPa): 150 / 15, lanca spryskująca: 840 mm, wąż wysokociśnieniowy, 10 m, DN 6, 250 barów ",
+      },
+      {
+        id: 4,
+        picture: glebogryzarka,
+        brand: "HORTMASZ",
+        item: "Glebogryzarka HGS-X620N",
+        about:
+          "Uzyskujemy dzięki temu lepsze spulchnienie i przemieszanie warstwy ornej gleby. Moc: 6.5 KM, szerokość robocza: 62 cm,ilość noży: 18, silnik: spalinowy",
       },
     ],
   };
@@ -147,7 +164,6 @@ export class GardenItems extends Component {
                     Opis <h4>{gardenItem.about}</h4>
                   </p>
                 </div>
-                <RentButton click={this.handleOpenRent} />
               </div>
             ))}
           </div>

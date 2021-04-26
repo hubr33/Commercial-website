@@ -6,15 +6,16 @@ export const Header = () => {
   return (
     <header>
       <div className="firmName">
-        <h2>Tutaj logo / info </h2>
+        <h2>Rent-Bud-Garden </h2>
+        <h3>Wypożyczalnia sprzętu budowlanego i ogrodniczego</h3>
       </div>
       <div className="info">
         <div className="hours">
           <p>
-            <strong>Pon-Pt:</strong> 8:00-16:00
+            <strong>Pon-Pt:</strong> 6:00-21:00
           </p>
           <p>
-            <strong>Sobota:</strong> 8:00-14:00
+            <strong>Sobota:</strong> 6:00-21:00
           </p>
           <p>
             <strong>Niedziela:</strong> Nieczynne

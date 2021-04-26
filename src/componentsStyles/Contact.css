@@ -1,3 +1,81 @@
 section.contact {
   min-height: calc(100vh - 100px);
+  background-color: rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+section.contact h2 {
+  font-size: 32px;
+  text-align: center;
+  color: rgb(0, 0, 100);
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+section.contact .allContacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 80%;
+  font-family: "Lato", sans-serif;
+}
+
+section.contact .allContacts .facebookContact {
+  color: rgb(0, 0, 100);
+}
+
+section.contact .allContacts .facebookContact i {
+  color: rgb(0, 201, 0);
+  margin-right: 20px;
+  font-size: 40px;
+  padding: 0;
+}
+
+section.contact .allContacts .facebookContact a {
+  text-decoration: none;
+  padding: 0;
+}
+
+section.contact .allContacts .facebookContact a:hover {
+  font-weight: bold;
+}
+
+section.contact .allContacts .phoneContact {
+  color: rgb(0, 0, 100);
+}
+
+section.contact .allContacts .phoneContact i {
+  color: rgb(0, 201, 0);
+  font-size: 40px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+section.contact .allContacts .emailContact {
+  color: rgb(0, 0, 100);
+}
+
+section.contact .allContacts .emailContact i {
+  color: rgb(0, 201, 0);
+  font-size: 40px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+section.contact .allContacts .addressLocation {
+  color: rgb(0, 0, 100);
+}
+
+section.contact .allContacts .addressLocation i {
+  color: rgb(0, 201, 0);
+  font-size: 40px;
+  margin-right: 20px;
+  padding: 0;
 }

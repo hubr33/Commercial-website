@@ -1,9 +1,18 @@
 import React, { Component } from "react";
 import "../componentsStyles/ItemsAll.css";
-import einhellDrill from "../componentsStyles/einhellDrill.jpg";
-import saw from "../componentsStyles/saw.jpg";
-import hammer from "../componentsStyles/hammer.jpg";
-import { RentButton } from "./RentButton";
+import zacieraczka from "../images/zacieraczka.jpg";
+import rebak from "../images/rebak.jpg";
+import przecinarka from "../images/przecinarka.jpg";
+import osusacz from "../images/osusacz.jpg";
+import osusaczBudowlany from "../images/osusaczBudowlany.jpg";
+import osusaczBudowlanyMaster from "../images/osusaczBudowlanyMaster.jpg";
+import pilarka from "../images/pilarka.jpg";
+import udar from "../images/udar.jpg";
+import szlifierka from "../images/szlifierka.jpg";
+import generator from "../images/generator.png";
+import wiertnica from "../images/wiertnica.jpg";
+import karcher from "../images/karcher.jpg";
+import glebogryzarka from "../images/glebogryzarka.jpg";
 
 export class BuildingItems extends Component {
   state = {
@@ -14,27 +23,107 @@ export class BuildingItems extends Component {
     buildingItems: [
       {
         id: 0,
-        picture: einhellDrill,
-        brand: "Einhell",
-        item: "Wiertarka",
+        picture: zacieraczka,
+        brand: "LUMAG",
+        item: "Zacieraczka",
         about:
-          "Wiertaka marki Einhell zapewni stabilną oraz szybką pracę, bez problemów!",
+          "Średnica zacierania 760 mm, 4-suwowy silnik o mocy 4,8 kW, jedno pokrętło regulujące wysokość pracy",
       },
       {
         id: 1,
-        picture: saw,
-        brand: "GardeTech",
-        item: "Piła spalinowa",
+        picture: rebak,
+        brand: "Red Dragon RTS-630",
+        item: "Rębak tarczowy",
         about:
-          "Piła spalinowa marki GardeTech. Piła najwyższej jakości do trudnych zadań.",
+          "Silnik spalinowy 15 KM, 4-SUW, wielokość zrębki 20-50mm, średnica tarczy 620mm",
       },
       {
         id: 2,
-        picture: hammer,
-        brand: "Makita",
-        item: "Młot udarowy",
+        picture: przecinarka,
+        brand: "Husqvarna K-770",
+        item: "Przecinarka",
         about:
-          "Młot udarowy marki Makita. Profesionalny sprzęt, który przebije najgrubszą warstwę.",
+          "Średnica tarczy, max. 350mm, Głębokość cięcia, max. 125mm, moc 3.7 kW",
+      },
+      {
+        id: 3,
+        picture: osusacz,
+        brand: "TROTEC",
+        item: "Osuszacz powietrza TTK 350 S",
+        about:
+          "Moc osuszania: 55l/24h, maks. 70l/24h, zalecana wielkość pomieszczenia: 180m². Obieg powietrza 450 m3/h. Pojemnik: 6l, Moc silnika 1.07 kW",
+      },
+      {
+        id: 4,
+        picture: osusaczBudowlany,
+        brand: "SCHEPPACH",
+        item: "Osuszacz budowlany DH6000",
+        about:
+          "Moc osuszania: 60l/24h. Zalecana wielkość pomieszczenia: 60-80m². Obieg powietrza 350 m3/h. Pojemnik: 6l, Moc silnika 1.15 kW",
+      },
+      {
+        id: 5,
+        picture: osusaczBudowlanyMaster,
+        brand: "MASTER",
+        item: "Osusacz budowlany DH-732",
+        about:
+          "Moc osuszania: 30l/24h, maks. 70l/24h, zalecana wielkość pomieszczenia: 25m². Obieg powietrza 160 m3/h. Pojemnik: 6.5l, Moc silnika 0.68 kW",
+      },
+      {
+        id: 6,
+        picture: pilarka,
+        brand: "Stihl",
+        item: "Pilarka MS 251",
+        about:
+          "Moc 2,2 kW / 3,0 KM, silnik 2-MIX, boczny napinacz piły łańcuchowej. Optymalna do pozyskiwania drewna opałowego przez użytkownika okazjonalnego ale również rolników, sadowników, ogrodników i plantatorów.",
+      },
+      {
+        id: 7,
+        picture: udar,
+        brand: "GRAPHITE",
+        item: "Młot udarowy SDS Hex",
+        about:
+          "Moc uderzeniowa: 45J, Moc pobierana: 1700W, typ udaru: pneumatyczny",
+      },
+      {
+        id: 8,
+        picture: szlifierka,
+        brand: "GRAPHITE",
+        item: "Szlifierka kątowa PRO 59GP004",
+        about:
+          "Moc: 2400W, zasilanie 230V/50Hz, prędkość obrotowa: 6500 obr./min, maksymalna średnica tarczy: 230mm",
+      },
+      {
+        id: 9,
+        picture: generator,
+        brand: "Könner & Söhnen",
+        item: "Generator benzynowy",
+        about:
+          "Moc maks: 3 kW, moc nominalna: 2.6 kW, moc silnika: 7 KM, paliwo: benzyna, Czas pracy bez tankowania przy 50%:	15 godzin, pojemność zbiornika paliwa: 15l",
+      },
+      {
+        id: 10,
+        picture: wiertnica,
+        brand: "LUMAG",
+        item: "Wiertnica spalinowa",
+        about:
+          "Moc silnika: 4 KM, paliwo: benzyna, długość wiertła: 910mm, średnica wiertła: 250mm, zbiornika paliwa: 0.55l",
+      },
+      {
+        id: 11,
+        picture: karcher,
+        brand: "Kärcher",
+        item: "URZĄDZENIE WYSOKOCIŚNIENIOWE HD 5/15 C",
+        about:
+          "Wydajność tłoczenia: 500l/h, Ciśnienie robocze (bar/MPa): 150 / 15, lanca spryskująca: 840 mm, wąż wysokociśnieniowy, 10 m, DN 6, 250 barów ",
+      },
+      {
+        id: 12,
+        picture: glebogryzarka,
+        brand: "HORTMASZ",
+        item: "Glebogryzarka HGS-X620N",
+        about:
+          "Uzyskujemy dzięki temu lepsze spulchnienie i przemieszanie warstwy ornej gleby. Moc: 6.5 KM, szerokość robocza: 62 cm,ilość noży: 18, silnik: spalinowy",
       },
     ],
   };
@@ -88,7 +177,7 @@ export class BuildingItems extends Component {
   render() {
     return (
       <section className="buildingItems">
-        <div className="buildingItemsShadow">
+        {/* <div className="buildingItemsShadow">
           <h2>Wynajem</h2>
           <div className="rentOptions">
             <button className="closeShadow" onClick={this.handleCloseRent}>
@@ -123,7 +212,7 @@ export class BuildingItems extends Component {
               Złóż zamówienie
             </button>
           </div>
-        </div>
+        </div> */}
         <div className="buildingItemsContainer">
           <h2>Nasz sprzęt budowlany</h2>
           <div className="buildItemContainer">
@@ -147,7 +236,6 @@ export class BuildingItems extends Component {
                     Opis <h4 key={buildingItem}>{buildingItem.about}</h4>
                   </p>
                 </div>
-                <RentButton click={this.handleOpenRent} />
               </div>
             ))}
           </div>

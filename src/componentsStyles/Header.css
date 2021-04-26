@@ -11,6 +11,22 @@ header .firmName {
   height: 100%;
 }
 
+header .firmName h2 {
+  font-size: 32px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: rgb(0, 0, 102);
+}
+
+header .firmName h3 {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  margin-left: 26px;
+  color: rgb(0, 146, 0);
+}
+
 header .info {
   width: 70%;
   height: 100%;

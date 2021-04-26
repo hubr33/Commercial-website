@@ -148,6 +148,10 @@ main .square .checkInfoBtn .checkUs {
   transition: 0.2 linear;
 }
 
+main .square .checkInfoBtn .checkUs p {
+  transform: skew(-20deg);
+}
+
 main .square .checkInfoBtn:hover .checkUs {
   color: green;
 }
@@ -213,9 +217,25 @@ main .square .checkInfoBtn:hover {
 }
 
 .aboutCompany .contactUs .contactPanel p {
-  font-size: 20px;
+  font-size: 28px;
   text-transform: uppercase;
+  color: rgb(0, 0, 100);
   font-family: "Dela Gothic One", cursive;
+}
+
+.aboutCompany .contactUs .contactPanel p i {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.aboutCompany .contactUs .contactPanel p:nth-child(2) {
+  color: green;
+  font-size: 26px;
+}
+
+.aboutCompany .contactUs .contactPanel p:nth-child(4) {
+  color: green;
+  font-size: 16px;
 }
 
 .aboutCompany .contactUs .contactPanel input {
@@ -344,10 +364,10 @@ main .square .checkInfoBtn:hover {
   bottom: 15%;
   transform: translateX(-50%);
   text-transform: uppercase;
+  text-decoration: none;
   outline: none;
   border: none;
   font-size: 20px;
-  letter-spacing: 1px;
   padding: 9px 24px;
   border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -411,10 +431,10 @@ main .square .checkInfoBtn:hover {
   bottom: 15%;
   transform: translateX(-50%);
   text-transform: uppercase;
+  text-decoration: none;
   outline: none;
   border: none;
   font-size: 20px;
-  letter-spacing: 1px;
   padding: 9px 24px;
   border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.1);

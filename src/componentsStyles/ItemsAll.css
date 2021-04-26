@@ -195,6 +195,7 @@ section.buildingItems
   .buildItemCreate {
   display: flex;
   width: 48%;
+  margin-bottom: 6px;
   border-radius: 7px;
   margin-top: 50px;
   height: 220px;
@@ -219,7 +220,7 @@ section.buildingItems
   .buildItemContainer
   .buildItemCreate
   .buildImg {
-  width: 50%;
+  width: 300px;
   height: 100%;
 }
 
