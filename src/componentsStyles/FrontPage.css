@@ -200,11 +200,12 @@ main .square .checkInfoBtn:hover {
 }
 
 .aboutCompany .contactUs .contactImg {
-  width: 24%;
+  width: 22%;
   height: 100%;
-  background-image: url("phone.png");
+  background-image: url("builder.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 .aboutCompany .contactUs .contactPanel {
@@ -212,7 +213,7 @@ main .square .checkInfoBtn:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 46%;
+  width: 60%;
   height: 100%;
 }
 
@@ -275,7 +276,7 @@ main .square .checkInfoBtn:hover {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  margin-left: 10%;
+  width: 30%;
   flex-grow: 1;
   font-size: 36px;
   font-family: "Dela Gothic One", cursive;

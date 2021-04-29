@@ -4,7 +4,7 @@ import "../componentsStyles/FrontPage.css";
 
 export class FrontPage extends Component {
   state = {
-    messages: ["Fachowa pomoc", "Solidne maszyny", "Pełna satysfakcja"],
+    messages: ["Fachowa pomoc", "Nowe maszyny", "Gwarantowana satysfakcja"],
     phoneNumber: "",
     email: "",
     phoneNumbersArray: [],
@@ -75,40 +75,15 @@ export class FrontPage extends Component {
           </div>
           <div className="square">
             <h2>
-              Wynajem sprzetu budowlanego <br />
-              oraz ogrodniczego
+              Wynajem sprzetu budowlanego <br />i ogrodniczego
             </h2>
             <button className="checkInfoBtn">
               <NavLink className="checkUs" to="/company">
-                <p>O Firmie</p>
+                <p>O nas</p>
               </NavLink>
             </button>
           </div>
         </main>
-        <div className="aboutCompany">
-          <div className="contactUs">
-            <div className="contactImg"></div>
-            <div className="contactPanel">
-              <p>Nasz numer kontaktowy</p>
-              <p>
-                <i class="fas fa-mobile-alt"></i>883 003 799
-              </p>
-
-              <p>Nasz adres e-mail</p>
-              <p>
-                <i class="far fa-envelope"></i>wypozyczalnia.plonsk@gmail.com
-              </p>
-            </div>
-            <div className="contactInfo">
-              {this.state.messages.map((message) => (
-                <div key={message}>
-                  <p key={message}></p>
-                  {message}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
         <div className="connectorsAndNews">
           <div className="building">
             <div className="buildingNote">
@@ -138,6 +113,30 @@ export class FrontPage extends Component {
               {this.state.newsArray.map((news) => (
                 <div className="noteContainer" key={news}>
                   <p key={news}>{news}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="aboutCompany">
+          <div className="contactUs">
+            <div className="contactImg"></div>
+            <div className="contactPanel">
+              <p>Numer kontaktowy</p>
+              <p>
+                <i class="fas fa-mobile-alt"></i>883 003 799
+              </p>
+
+              <p>Adres e-mail</p>
+              <p>
+                <i class="far fa-envelope"></i>wypozyczalnia.plonsk@gmail.com
+              </p>
+            </div>
+            <div className="contactInfo">
+              {this.state.messages.map((message) => (
+                <div key={message}>
+                  <p key={message}></p>
+                  {message}
                 </div>
               ))}
             </div>

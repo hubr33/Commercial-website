@@ -4,11 +4,26 @@ section.contact {
   position: relative;
 }
 
+section.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("contactBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  filter: blur(2px) grayscale(0.7) brightness(0.6);
+}
+
 section.contact h2 {
-  font-size: 32px;
+  font-size: 42px;
   text-align: center;
-  color: rgb(0, 0, 100);
-  font-family: "Lato", sans-serif;
+  color: aliceblue;
+  font-family: "Noto Sans JP", sans-serif;
   text-transform: uppercase;
   padding: 10px 0;
 }
@@ -17,18 +32,12 @@ section.contact .allContacts {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: 30px;
+  font-size: 34px;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
+  left: 5%;
+  width: 90%;
   height: 80%;
   font-family: "Lato", sans-serif;
-}
-
-section.contact .allContacts .facebookContact {
-  color: rgb(0, 0, 100);
 }
 
 section.contact .allContacts .facebookContact i {
@@ -40,6 +49,7 @@ section.contact .allContacts .facebookContact i {
 
 section.contact .allContacts .facebookContact a {
   text-decoration: none;
+  color: aliceblue;
   padding: 0;
 }
 
@@ -48,7 +58,7 @@ section.contact .allContacts .facebookContact a:hover {
 }
 
 section.contact .allContacts .phoneContact {
-  color: rgb(0, 0, 100);
+  color: aliceblue;
 }
 
 section.contact .allContacts .phoneContact i {
@@ -59,7 +69,7 @@ section.contact .allContacts .phoneContact i {
 }
 
 section.contact .allContacts .emailContact {
-  color: rgb(0, 0, 100);
+  color: aliceblue;
 }
 
 section.contact .allContacts .emailContact i {
@@ -70,7 +80,7 @@ section.contact .allContacts .emailContact i {
 }
 
 section.contact .allContacts .addressLocation {
-  color: rgb(0, 0, 100);
+  color: aliceblue;
 }
 
 section.contact .allContacts .addressLocation i {
@@ -78,4 +88,21 @@ section.contact .allContacts .addressLocation i {
   font-size: 40px;
   margin-right: 20px;
   padding: 0;
+}
+
+section.contact .allContacts .googleContact i {
+  color: rgb(0, 201, 0);
+  font-size: 40px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+section.contact .allContacts .googleContact a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0;
+}
+
+section.contact .allContacts .googleContact a:hover {
+  font-weight: bold;
 }

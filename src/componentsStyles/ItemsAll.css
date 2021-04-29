@@ -203,6 +203,12 @@ section.buildingItems
   background-color: white;
   box-shadow: 1px 1px 4px black;
 }
+section.buildingItems
+  .buildingItemsContainer
+  .buildItemContainer
+  .buildItemCreate:last-child {
+  margin-bottom: 50px;
+}
 
 section.buildingItems
   .buildingItemsContainer

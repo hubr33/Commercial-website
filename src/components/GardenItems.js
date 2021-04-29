@@ -35,7 +35,7 @@ export class GardenItems extends Component {
         brand: "Stihl",
         item: "Nożyce spalinowe HS 45, 60 cm",
         about:
-          "Wyjątkowo lekkie nożyce spalinowe, przeznaczone do pielęgncji żywopłotów w przydomowych ogrodach.",
+          "Wyjątkowo lekkie nożyce spalinowe, przeznaczone do pielęgncji żywopłotów w przydomowych ogrodach",
       },
       {
         id: 3,
@@ -43,7 +43,7 @@ export class GardenItems extends Component {
         brand: "Kärcher",
         item: "URZĄDZENIE WYSOKOCIŚNIENIOWE HD 5/15 C",
         about:
-          "Wydajność tłoczenia: 500l/h, Ciśnienie robocze (bar/MPa): 150 / 15, lanca spryskująca: 840 mm, wąż wysokociśnieniowy, 10 m, DN 6, 250 barów ",
+          "Wydajność tłoczenia: 500l/h, ciśnienie robocze (bar/MPa): 150 / 15, lanca spryskująca: 840 mm, wąż wysokociśnieniowy, 10 m, DN 6, 250 barów ",
       },
       {
         id: 4,
@@ -51,7 +51,7 @@ export class GardenItems extends Component {
         brand: "HORTMASZ",
         item: "Glebogryzarka HGS-X620N",
         about:
-          "Uzyskujemy dzięki temu lepsze spulchnienie i przemieszanie warstwy ornej gleby. Moc: 6.5 KM, szerokość robocza: 62 cm,ilość noży: 18, silnik: spalinowy",
+          "Uzyskujemy dzięki temu lepsze spulchnienie i przemieszanie warstwy ornej gleby. Moc: 6.5 KM, szerokość robocza: 62 cm, ilość noży: 18, silnik: spalinowy",
       },
     ],
   };

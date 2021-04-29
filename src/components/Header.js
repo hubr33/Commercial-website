@@ -2,7 +2,7 @@ import React from "react";
 import "../componentsStyles/Header.css";
 import { NavLink } from "react-router-dom";
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <header>
       <div className="firmName">
@@ -20,13 +20,17 @@ export const Header = () => {
           <p>
             <strong>Niedziela:</strong> Nieczynne
           </p>
+          <p>
+            <p>{props.time}</p>
+            <p>{props.date}</p>
+          </p>
         </div>
         <div className="navButtons">
           <NavLink className="navBtn" to="/">
             Start
           </NavLink>
           <NavLink className="navBtn" to="/company">
-            O firmie
+            O nas
           </NavLink>
           <NavLink className="navBtn" to="/rent">
             Wynajem
