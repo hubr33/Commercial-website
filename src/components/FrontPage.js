@@ -124,12 +124,13 @@ export class FrontPage extends Component {
             <div className="contactPanel">
               <p>Numer kontaktowy</p>
               <p>
-                <i class="fas fa-mobile-alt"></i>883 003 799
+                <i className="fas fa-mobile-alt"></i>883 003 799
               </p>
 
               <p>Adres e-mail</p>
               <p>
-                <i class="far fa-envelope"></i>wypozyczalnia.plonsk@gmail.com
+                <i className="far fa-envelope"></i>
+                wypozyczalnia.plonsk@gmail.com
               </p>
             </div>
             <div className="contactInfo">
