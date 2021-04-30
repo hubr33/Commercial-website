@@ -66,13 +66,13 @@ export class FrontPage extends Component {
     return (
       <>
         <main>
-          <div className="sentMessage">
+          {/* <div className="sentMessage">
             <p>Wiadomość została pomyślnie wysłana!</p>
             <p>
               Skontaktujemy się z Państwem w jak{" "}
               <strong>najszybszym czasie</strong>.
             </p>
-          </div>
+          </div> */}
           <div className="square">
             <h2>
               Wynajem sprzetu budowlanego <br />i ogrodniczego

@@ -19,16 +19,14 @@ export class Contact extends Component {
             </a>
           </div>
           <div className="phoneContact">
-            <i className="fas fa-phone-square"></i>Telefon: 883 003 799 -
-            Krzysztof
+            <i className="fas fa-phone-square"></i>883 003 799 - Krzysztof
           </div>
           <div className="emailContact">
-            <i classNames="fas fa-envelope-square"></i>E-mail:
+            <i className="fas fa-envelope-square"></i>
             wypozyczalnia.plonsk@gmail.com
           </div>
           <div className="addressLocation">
-            <i className="fas fa-map-marker-alt"></i> Adres: Potyry 25, gm.
-            Naruszewo
+            <i className="fas fa-map-marker-alt"></i>Potyry 25, gm. Naruszewo
           </div>
           <div className="googleContact">
             <i className="fab fa-google"></i>

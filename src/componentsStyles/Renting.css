@@ -9,9 +9,8 @@ section.renting .buildChoose {
   background-image: url("./rentBuild.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 130%;
+  background-size: cover;
   filter: grayscale(0.5);
-  transition: 3s linear;
 }
 
 section.renting .buildChoose .buildChooseContainer {
@@ -20,10 +19,6 @@ section.renting .buildChoose .buildChooseContainer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 3s linear;
-}
-
-section.renting .buildChoose:hover {
-  background-size: 140%;
 }
 
 section.renting .buildChoose:hover .buildChooseContainer {
@@ -71,9 +66,8 @@ section.renting .gardenChoose {
   background-image: url("./rentGarden.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 130%;
+  background-size: cover;
   filter: grayscale(0.5);
-  transition: 5s linear;
 }
 
 section.renting .gardenChoose .gardenChooseContainer {
@@ -82,10 +76,6 @@ section.renting .gardenChoose .gardenChooseContainer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 3s linear;
-}
-
-section.renting .gardenChoose:hover {
-  background-size: 140%;
 }
 
 section.renting .gardenChoose:hover .gardenChooseContainer {
@@ -126,4 +116,52 @@ section.renting .gardenChoose .gardenChooseContainer .gardenChooseBtn {
 
 section.renting .gardenChoose .gardenChooseContainer .gardenChooseBtn:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1200px) {
+  section.renting {
+    flex-direction: column;
+    height: 100vh;
+  }
+  section.renting .buildChoose {
+    width: 100%;
+    height: 50vh;
+  }
+  section.renting .gardenChoose {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  section.renting .buildChoose .buildChooseContainer h2,
+  section.renting .gardenChoose .gardenChooseContainer h2 {
+    font-size: 30px;
+  }
+  section.renting .buildChoose .buildChooseContainer .buildChooseBtn,
+  section.renting .gardenChoose .gardenChooseContainer .gardenChooseBtn {
+    width: 60%;
+  }
+}
+
+@media (max-width: 420px) and (orientation: portrait) {
+  section.renting .buildChoose .buildChooseContainer h2,
+  section.renting .gardenChoose .gardenChooseContainer h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  section.renting {
+    flex-direction: column;
+    height: 200vh;
+  }
+  section.renting .buildChoose {
+    width: 100%;
+    height: 100vh;
+  }
+  section.renting .gardenChoose {
+    width: 100%;
+    height: 100vh;
+  }
 }

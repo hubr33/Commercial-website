@@ -269,3 +269,76 @@ section.buildingItems
   font-size: 16px;
   margin-left: 8px;
 }
+
+@media (max-width: 1200px) {
+  section.buildingItems .buildingItemsContainer .buildItemContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.buildingItems
+    .buildingItemsContainer
+    .buildItemContainer
+    .buildItemCreate {
+    width: 90%;
+  }
+  section.buildingItems
+    .buildingItemsContainer
+    .buildItemContainer
+    .buildItemCreate:nth-child(1) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  section.buildingItems
+    .buildingItemsContainer
+    .buildItemContainer
+    .buildItemCreate {
+    flex-direction: column;
+    height: 420px;
+  }
+  section.buildingItems
+    .buildingItemsContainer
+    .buildItemContainer
+    .buildItemCreate
+    .buildImg {
+    text-align: center;
+    width: 100%;
+  }
+  section.buildingItems
+    .buildingItemsContainer
+    .buildItemContainer
+    .buildItemCreate
+    .buildText {
+    width: 100%;
+    height: 100%;
+  }
+  section.buildingItems
+    .buildingItemsContainer
+    .buildItemContainer
+    .buildItemCreate
+    .buildText
+    p {
+    font-size: 14px;
+  }
+  section.buildingItems
+    .buildingItemsContainer
+    .buildItemContainer
+    .buildItemCreate
+    .buildText
+    h4 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  section.buildingItems
+    .buildingItemsContainer
+    .buildItemContainer
+    .buildItemCreate
+    .buildText
+    h4 {
+    font-size: 12px;
+  }
+}

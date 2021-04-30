@@ -73,9 +73,50 @@ section.companyWrapper div.location div {
   width: 96%;
   height: 84%;
   margin: 0 auto;
-  background-color: turquoise;
   background-image: url("../componentsStyles/trasa.jpg");
   background-position: center;
   background-size: contain;
-  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+@media (max-width: 1200px) {
+  section.companyWrapper {
+    flex-direction: column;
+  }
+  section.companyWrapper aside {
+    width: 80%;
+    height: 70%;
+    margin: 20px 0 40px 0;
+  }
+  section.companyWrapper div.location {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  section.companyWrapper {
+    height: 120vh;
+  }
+  section.companyWrapper div.location {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) and (orientation: portrait) {
+  section.companyWrapper {
+    height: 180vh;
+  }
+  section.companyWrapper aside p {
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  section.companyWrapper {
+    height: 200vh;
+  }
+  section.companyWrapper div.location {
+    display: none;
+  }
 }

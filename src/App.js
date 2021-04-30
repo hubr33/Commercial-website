@@ -6,20 +6,11 @@ import Page from "./components/Page";
 import { Footer } from "./components/Footer";
 
 class App extends Component {
-  state = {
-    date: new Date().toISOString().slice(0, 10),
-    time: new Date().toLocaleTimeString(),
-  };
-
-  getTime = () => {
-    this.setState({ time: new Date().toLocaleTimeString() });
-  };
-
+  state = {};
   render() {
-    setInterval(this.getTime, 1000);
     return (
       <Router>
-        <Header date={this.state.date} time={this.state.time} />
+        <Header />
         <Page />
         <Footer />
       </Router>

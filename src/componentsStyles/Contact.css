@@ -37,7 +37,7 @@ section.contact .allContacts {
   left: 5%;
   width: 90%;
   height: 80%;
-  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 section.contact .allContacts .facebookContact i {
@@ -105,4 +105,22 @@ section.contact .allContacts .googleContact a {
 
 section.contact .allContacts .googleContact a:hover {
   font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  section.contact .allContacts {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  section.contact .allContacts {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  section.contact {
+    height: 200vh;
+  }
 }

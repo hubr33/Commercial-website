@@ -319,6 +319,7 @@ main .square .checkInfoBtn:hover {
   color: white;
   background-image: url("./buildingBackground.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.5);
   overflow: hidden;
@@ -388,6 +389,7 @@ main .square .checkInfoBtn:hover {
   background-image: url("./gardeningBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   filter: grayscale(0.5);
   overflow: hidden;
 }
@@ -513,4 +515,115 @@ main .square .checkInfoBtn:hover {
   margin: 0 auto;
   color: rgb(93, 93, 230);
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .connectorsAndNews {
+    flex-direction: column;
+    height: 200vh;
+    overflow: hidden;
+  }
+  .connectorsAndNews .building {
+    width: 100%;
+    height: 100%;
+  }
+  .connectorsAndNews .gardening {
+    width: 100%;
+  }
+  .connectorsAndNews .news {
+    width: 100%;
+  }
+  .aboutCompany {
+    height: 100vh;
+  }
+  .aboutCompany .contactUs {
+    flex-direction: column;
+  }
+  .aboutCompany .contactUs .contactImg {
+    display: none;
+  }
+  .aboutCompany .contactUs .contactPanel {
+    width: 100%;
+  }
+  .aboutCompany .contactUs .contactInfo {
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .aboutCompany .contactUs .contactInfo div {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .aboutCompany {
+    height: 100vh;
+  }
+  .aboutCompany .contactUs .contactPanel {
+    text-align: center;
+  }
+  .aboutCompany .contactUs .contactPanel p {
+    font-size: 18px;
+  }
+  .aboutCompany .contactUs .contactPanel p:nth-child(2),
+  .aboutCompany .contactUs .contactPanel p:nth-child(4) {
+    color: green;
+    font-size: 10px;
+  }
+  .connectorsAndNews .news .newsNote .noteContainer {
+    font-size: 16px;
+  }
+  .aboutCompany .contactUs .contactInfo {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 420px) and (orientation: portrait) {
+  .aboutCompany {
+    height: 140vh;
+  }
+  .connectorsAndNews .building .buildingNote p,
+  .connectorsAndNews .gardening .gardeningNote p {
+    font-size: 20px;
+  }
+  .connectorsAndNews .building .buildingNote h2,
+  .connectorsAndNews .gardening .gardeningNote h2 {
+    font-size: 28px;
+  }
+  .connectorsAndNews .news .newsNote .noteContainer {
+    font-size: 14px;
+  }
+
+  .aboutCompany .contactUs .contactPanel p {
+    padding: 10px 0;
+  }
+  .aboutCompany .contactUs .contactPanel p:nth-child(2),
+  .aboutCompany .contactUs .contactPanel p:nth-child(4) {
+    color: green;
+    font-size: 8px;
+  }
+  .aboutCompany .contactUs .contactPanel p:nth-child(2) {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .connectorsAndNews {
+    flex-direction: column;
+    height: 400vh;
+    overflow: hidden;
+  }
+  .aboutCompany {
+    height: 340vh;
+  }
 }

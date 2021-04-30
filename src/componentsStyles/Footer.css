@@ -63,3 +63,33 @@ footer .iconLinks .fa-facebook:hover,
 footer .iconLinks .fa-google:hover {
   color: black;
 }
+
+@media (max-width: 1200px) {
+  footer .pageRights {
+    width: 40%;
+  }
+  footer .pageRights p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  footer .footerLinks {
+    display: none;
+  }
+  footer .pageRights {
+    width: 80%;
+  }
+  footer .iconLinks {
+    width: 16%;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  footer .pageRights p {
+    font-size: 8px;
+  }
+  footer .iconLinks {
+    font-size: 18px;
+  }
+}
