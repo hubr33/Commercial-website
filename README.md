@@ -9,4 +9,4 @@ How to run it
 3. (If you do not have CRA in terminal: npm install -g create-react-app)
 4. in terminal: npm install
 5.npm start
-6. NJOY
+6. ENJOY
